@@ -3,7 +3,7 @@
 > A live, open-sourced record of every sovereign state's Bitcoin holdings — tiered, sourced, and rendered.
 
 **Live dashboard:** [`monitoringroom.com/sovereign-bitcoin`](https://monitoringroom.com/sovereign-bitcoin)
-**Companion publication:** [Finnish Sovereign Bitcoin Whitepaper](https://github.com/jukkablomberg/sovereign-bitcoin-reserve-monitor) (publishing 23 May 2026)
+**Companion publication:** [Finnish Sovereign Bitcoin Whitepaper](https://github.com/jukkablomberg/finnish-bitcoin-reserve) (publishing 23 May 2026)
 **Maintainer:** [Jukka Blomberg](https://www.linkedin.com/in/jukkablomberg/)
 **License:** MIT
 

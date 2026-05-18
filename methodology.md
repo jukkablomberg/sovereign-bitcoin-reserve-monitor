@@ -10,7 +10,7 @@
 
 ## 1 · Purpose
 
-This document describes the methodology behind the Sovereign Bitcoin Reserve Monitor — a public, machine-readable, openly-sourced record of every sovereign state's Bitcoin holdings, classified by reserve status and tier. The Monitor exists to give policymakers, journalists, family offices, and researchers a single canonical reference for "where is the sovereign Bitcoin map today," and to provide the live data layer behind the *Finnish Sovereign Bitcoin Whitepaper* (publishing 23 May 2026).
+This document describes the methodology behind the Sovereign Bitcoin Reserve Monitor — a public, machine-readable, openly-sourced record of every sovereign state's Bitcoin holdings, classified by reserve status and tier. The Monitor exists to give policymakers, journalists, family offices, and researchers a single canonical reference for "where is the sovereign Bitcoin map today," and to provide the live data layer behind the *Finnish Sovereign Bitcoin Whitepaper* (publishing 23 May 2026, source at [`github.com/jukkablomberg/finnish-bitcoin-reserve`](https://github.com/jukkablomberg/finnish-bitcoin-reserve)).
 
 The Monitor is **not** an investment recommendation, a legal opinion, or a complete intelligence product. It is a transparency tool. Methodology is open; data is open; the dashboard that renders the data is a separate brand product, but the canonical data lives here.
 
