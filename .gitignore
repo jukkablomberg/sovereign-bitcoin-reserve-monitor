@@ -12,3 +12,9 @@ node_modules/
 dist/
 .idea/
 .vscode/
+
+# Private layers — deployed from the separate jukkablomberg/monitoring repo.
+# Keep these on disk locally but do not publish to the public methodology repo.
+web/
+DEPLOY.md
+

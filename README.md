@@ -36,25 +36,21 @@ This is the third repo in the **Open-Source Consultancy** line, after [`corporat
 └── LICENSE                    # MIT
 ```
 
-The **rendered dashboard** lives at [`monitoringroom.com/sovereign-bitcoin`](https://monitoringroom.com/sovereign-bitcoin), deployed via the separate (private) [`jukkablomberg/monitoring`](https://github.com/jukkablomberg/monitoring) repo which auto-publishes to Vercel. The dashboard fetches data directly from this repo's `data/` directory via the GitHub raw URL, so the website and the data update independently. See `DEPLOY.md` for the full setup.
+The **rendered dashboard** lives at [`monitoringroom.com/sovereign-bitcoin`](https://monitoringroom.com/sovereign-bitcoin) and is deployed from a separate (private) website repo that auto-publishes to Vercel. The dashboard fetches data directly from this repo's `data/` directory via the GitHub raw URL — so the website and the data update independently, and **anyone forking this repo can build their own renderer against the same open data.**
 
 ---
 
 ## Quickstart
 
-### View locally
+### Inspect the data
 
 ```bash
 git clone https://github.com/jukkablomberg/sovereign-bitcoin-reserve-monitor.git
 cd sovereign-bitcoin-reserve-monitor
-python3 -m http.server 8000
-# Open http://localhost:8000/web/ — the page reads ../data/sovereigns.json and ../data/events.json.
-# Serving from the repo root (not from web/) is required so the relative data path resolves.
+cat data/sovereigns.json | python3 -m json.tool | less
 ```
 
-Once the repo is pushed to GitHub, the dashboard automatically falls back to
-`https://raw.githubusercontent.com/jukkablomberg/sovereign-bitcoin-reserve-monitor/main/data/sovereigns.json`,
-so it works from any static host (Vercel, Cloudflare Pages, Netlify, etc.) without further configuration.
+The same data is also live at `https://raw.githubusercontent.com/jukkablomberg/sovereign-bitcoin-reserve-monitor/main/data/sovereigns.json` and is refreshed daily by the GitHub Action below. Any static renderer (Vercel, Cloudflare Pages, Netlify, your own HTML) can fetch this URL directly — no build step required.
 
 ### Refresh prices and derived fields
 
