@@ -1,0 +1,67 @@
+{
+  "events": [
+    {
+      "date": "2021-09-07",
+      "country_code": "SV",
+      "headline": "El Salvador adopts Bitcoin as legal tender",
+      "type": "legislation",
+      "source": "https://www.chainalysis.com/blog/bitcoin-strategic-reserves/"
+    },
+    {
+      "date": "2024-07-15",
+      "country_code": "DE",
+      "headline": "Germany sells ~50,000 BTC seized from Movie2K case",
+      "type": "sale",
+      "source": "https://www.ccn.com/education/crypto/national-crypto-reserves-tracker-countries-bitcoin-state-wealth/"
+    },
+    {
+      "date": "2025-12-31",
+      "country_code": "CZ",
+      "headline": "Czech National Bank Governor Aleš Michl publicly discusses Bitcoin as reserve diversifier",
+      "type": "exploration",
+      "source": "https://cointelegraph.com/news/2026-sovereign-bitcoin-reserves-tradfi-tokenization-adoption-sygnum"
+    },
+    {
+      "date": "2026-02-15",
+      "country_code": "BR",
+      "headline": "Brazilian Congress reintroduces RESBit bill (target: 1M BTC over 5 years)",
+      "type": "legislation",
+      "source": "https://cointelegraph.com/news/2026-sovereign-bitcoin-reserves-tradfi-tokenization-adoption-sygnum"
+    },
+    {
+      "date": "2026-03-06",
+      "country_code": "US",
+      "headline": "U.S. Strategic Bitcoin Reserve formalized via executive framework (~325,000 BTC)",
+      "type": "executive_order",
+      "source": "https://en.wikipedia.org/wiki/U.S._Strategic_Bitcoin_Reserve"
+    },
+    {
+      "date": "2026-04-01",
+      "country_code": "PK",
+      "headline": "Pakistan announces creation of a Strategic Bitcoin Reserve",
+      "type": "announcement",
+      "source": "https://cryptollia.com/articles/bitcoins-sovereign-embrace-nation-state-adoption-regulatory-clarity-2026-trajectory"
+    },
+    {
+      "date": "2026-04-30",
+      "country_code": "BT",
+      "headline": "Bhutan holdings reduced from ~13,000 to ~3,654 BTC through 2025–2026 sales",
+      "type": "sale",
+      "source": "https://www.cryptopolitan.com/bhutan-quietly-moves-42m-in-bitcoin-in-2026/"
+    },
+    {
+      "date": "2026-05-15",
+      "country_code": "FI",
+      "headline": "Kokoomus MPs Sammallahti and Paasi publicly propose a Finnish strategic Bitcoin reserve",
+      "type": "announcement",
+      "source": "https://www.kauppalehti.fi/uutiset/a/32dff41d-3c2c-4782-9e8d-b527db8b0d17"
+    },
+    {
+      "date": "2026-05-23",
+      "country_code": "FI",
+      "headline": "Finnish Sovereign Bitcoin Whitepaper published (Jukka Blomberg)",
+      "type": "exploration",
+      "source": "https://github.com/jukkablomberg/sovereign-bitcoin-reserve-monitor"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jukkablomberg/sovereign-bitcoin-reserve-monitor/blob/main/data/schema.json",
+  "title": "Sovereign Bitcoin Reserve Monitor — Canonical Data Schema",
+  "description": "Canonical schema for sovereign Bitcoin holdings data. See methodology.md §7 for documentation.",
+  "type": "object",
+  "required": ["meta", "sovereigns"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["generated_at", "methodology_version", "btc_price_usd"],
+      "properties": {
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO-8601 timestamp at which this snapshot was generated."
+        },
+        "methodology_version": {
+          "type": "string",
+          "description": "Version of methodology.md against which this data was assembled."
+        },
+        "btc_price_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "BTC/USD spot price at generation time (CoinGecko public API)."
+        },
+        "btc_price_eur": {
+          "type": "number",
+          "minimum": 0,
+          "description": "BTC/EUR spot price at generation time."
+        },
+        "total_btc_supply": {
+          "type": "number",
+          "description": "Approximate current circulating BTC supply used for percent-of-supply calculations."
+        }
+      }
+    },
+    "sovereigns": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sovereign" }
+    }
+  },
+  "$defs": {
+    "sovereign": {
+      "type": "object",
+      "required": ["country_code", "country_name", "holdings_btc", "status", "as_of", "sources"],
+      "properties": {
+        "country_code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "ISO 3166-1 alpha-2 country code."
+        },
+        "country_name": {
+          "type": "string"
+        },
+        "holdings_btc": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Current verified holdings in whole BTC."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "strategic_reserve",
+            "seized_held",
+            "announced_not_yet_held",
+            "legislation_proposed",
+            "exploring",
+            "divested",
+            "no_position"
+          ]
+        },
+        "tier": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Computed from holdings_btc; see methodology §4."
+        },
+        "framework": {
+          "type": "string",
+          "description": "Brief description of the holding framework."
+        },
+        "as_of": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO-8601 date of the most recent primary-source confirmation."
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["label", "url", "type"],
+            "properties": {
+              "label": { "type": "string" },
+              "url": { "type": "string", "format": "uri" },
+              "type": { "type": "string", "enum": ["primary", "secondary"] }
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        },
+        "status_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["status", "started_at"],
+            "properties": {
+              "status": { "type": "string" },
+              "started_at": { "type": "string", "format": "date" },
+              "ended_at": { "type": "string", "format": "date" },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
