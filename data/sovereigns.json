@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-10-29T08:13:05Z",
+    "generated_at": "2026-10-30T08:19:18Z",
     "methodology_version": "v0.1.0",
-    "btc_price_usd": 79943.0,
-    "btc_price_eur": 71730.0,
+    "btc_price_usd": 78063.0,
+    "btc_price_eur": 69727.0,
     "total_btc_supply": 19850000
   },
   "sovereigns": [
@@ -47,8 +47,8 @@
         }
       ],
       "_derived": {
-        "usd_value": 25981475000.0,
-        "eur_value": 23312250000.0,
+        "usd_value": 25370475000.0,
+        "eur_value": 22661275000.0,
         "pct_of_supply": 1.6373
       }
     },
@@ -80,8 +80,8 @@
         }
       ],
       "_derived": {
-        "usd_value": 604768795.0,
-        "eur_value": 542637450.0,
+        "usd_value": 590546595.0,
+        "eur_value": 527484755.0,
         "pct_of_supply": 0.0381
       }
     },
@@ -114,8 +114,8 @@
         }
       ],
       "_derived": {
-        "usd_value": 292111722.0,
-        "eur_value": 262101420.0,
+        "usd_value": 285242202.0,
+        "eur_value": 254782458.0,
         "pct_of_supply": 0.0184
       }
     },
@@ -147,8 +147,8 @@
         }
       ],
       "_derived": {
-        "usd_value": 7194870.0,
-        "eur_value": 6455700.0,
+        "usd_value": 7025670.0,
+        "eur_value": 6275430.0,
         "pct_of_supply": 0.0005
       }
     },
@@ -297,8 +297,8 @@
         }
       ],
       "_derived": {
-        "usd_value": 3705437993.0,
-        "eur_value": 3324757230.0,
+        "usd_value": 3618298113.0,
+        "eur_value": 3231916177.0,
         "pct_of_supply": 0.2335
       }
     },
@@ -325,8 +325,8 @@
         }
       ],
       "_derived": {
-        "usd_value": 4876523000.0,
-        "eur_value": 4375530000.0,
+        "usd_value": 4761843000.0,
+        "eur_value": 4253347000.0,
         "pct_of_supply": 0.3073
       }
     },
@@ -353,8 +353,8 @@
         }
       ],
       "_derived": {
-        "usd_value": 15189170000.0,
-        "eur_value": 13628700000.0,
+        "usd_value": 14831970000.0,
+        "eur_value": 13248130000.0,
         "pct_of_supply": 0.9572
       }
     }
